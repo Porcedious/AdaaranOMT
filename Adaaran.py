@@ -125,5 +125,5 @@ else:
             green_tax_cost = (num_adults + num_children) * resort_info['extra_charges']['green_tax'] * stay['num_nights']
             extra_night_charge = resort_info.get("extra_night_charge", 0) * num_rooms * stay['num_nights']
             total_cost += base_rate + extra_adult_cost + extra_child_cost + green_tax_cost + extra_night_charge
-            total_cost=(total_cost+2%)
+            total_cost *= 1.03  # Add 3% margin
         st.success(f"💵 Total Cost for {resort_choice}: ${total_cost}")
