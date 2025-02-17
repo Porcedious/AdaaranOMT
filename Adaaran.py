@@ -127,4 +127,3 @@ else:
             total_cost += base_rate + extra_adult_cost + extra_child_cost + green_tax_cost + extra_night_charge
         
         st.success(f"💵 Total Cost for {resort_choice}: ${total_cost}")
-        /Users/aditya/Cost Calculator/Adaaran.py
